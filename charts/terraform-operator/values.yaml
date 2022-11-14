@@ -39,8 +39,9 @@ controller:
   # set default security context
   securityContext:
     runAsNonRoot: true
-    # This can be set to null for use on openshift 
     runAsUser: 1001
+  # switch to this when on OpenShfift to allow OpenShift to set its own secure defaults 
+  #securityContext: {}
   
   # controller.environmentVars -- key/value envs
   environmentVars: {}
